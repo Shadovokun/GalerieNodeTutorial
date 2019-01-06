@@ -249,7 +249,7 @@ On relance le serveur, on vérifie que le message est toujours le même... Et ho
 
 #### Utilisation de Swiper
 
-Swiper est un package qui permet de créer une galerie photo assez jolie, assez facilement, on va donc en profiter :
+[Swiper](http://idangero.us/swiper/demos/) est un package qui permet de créer une galerie photo assez jolie, assez facilement, on va donc en profiter :
 ```
 npm install swiper
 ```
