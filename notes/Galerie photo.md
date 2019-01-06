@@ -255,6 +255,7 @@ npm install swiper
 ```
 
 Du coup, maintenant, on va devoir intégrer des fichiers *.css* et *.js*, ce qui nous mène donc à aller modifier *index.js* :
+
 *index.js*
 ```javascript
 /* eslint-disable no-console */
@@ -402,6 +403,7 @@ app.listen(3000, () => console.log('Example app listening on port 3000!'));
 
 Il faudra donc créer un dossier *public* à la racine du projet et y mettre les photos que l'on veut employer.
 Puis, il faudra modifier le fichier *index.html* de la sorte :
+
 *index.html* (zoom sur la partie importante)
 ```html
 <!-- Swiper -->
