@@ -1,10 +1,3 @@
----
-title: Galerie photo
-tags: [Import-17b0, Personal Project]
-favorited: true
-pinned: true
----
-
 # Galerie photo
 
 - Explication du projet :white_check_mark:
