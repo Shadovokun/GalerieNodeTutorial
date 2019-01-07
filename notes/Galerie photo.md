@@ -1,7 +1,3 @@
----
-title: Galerie photo
----
-
 # Galerie photo
 
 - [Explication du projet](#explication-du-projet) :white_check_mark:
