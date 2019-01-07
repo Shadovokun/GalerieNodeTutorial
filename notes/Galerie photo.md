@@ -31,7 +31,7 @@ Tout d'abord, nous verrons comment partir d'une bonne base, pour se lancer dans 
 ![](http://puu.sh/Csk3S/d1defa2dae.png)
 Ce sera la base de notre travail, nous verrons par la suite si d'autres éléments doivent être ajoutés.
 
-## Prérequis <a name="prerequis"></a>Explication du projet
+## <a name="prerequis"></a>Prérequis
 
 - [NodeJs](https://nodejs.org/en/)
 - Un éditeur de texte comme [Atom](https://atom.io/) ou [Visual Studio Code](https://code.visualstudio.com/) (pour le confort)
