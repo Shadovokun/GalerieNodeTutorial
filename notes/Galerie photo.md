@@ -1,17 +1,22 @@
+---
+title: Galerie photo
+---
+
 # Galerie photo
 
-- Explication du projet :white_check_mark:
-- Technologies employées :white_check_mark:
-- Maquette sommaire :white_check_mark:
-- Réalisation du projet NodeJs :white_check_mark:
-- Réalisation du projet NodeJs + VueJs
+- [Explication du projet](#explication-du-projet) :white_check_mark:
+- [Technologies employées](#technologies-employees) :white_check_mark:
+- [Maquette sommaire](#maquette-sommaire) :white_check_mark:
+- [Prérequis](#prerequis) :white_check_mark:
+- [Réalisation du projet NodeJs](#projet-nodejs) :white_check_mark:
+- [Réalisation du projet NodeJs + VueJs](#projet-nodejs-vuejs)
 
-## Explication du projet
+## <a name="explication-du-projet"></a>Explication du projet
 Ce projet a pour but de comprendre le développement web récent. Le projet sur lequel nous allons travailler sera réalisé de 2 manières, une première en NodeJs standard, la seconde sera en NodeJs avec VueJs. C'est-à-dire que l'on pourra donc faire un parallèle entre les 2 pour comprendre ce qu'un framework (VueJs) peut nous apporter dans le développement de notre application (car on appelle désormais ainsi les projets webs).
 L'application constituera à créer une galerie d'images, tout simplement.
 Tout d'abord, nous verrons comment partir d'une bonne base, pour se lancer dans le bain, ensuite nous verrons comment atteindre notre objectif.
 
-## Technologies employées
+## <a name="technologies-employees"></a>Technologies employées
 
 | Technologie        | Description |
 |:-------------:|:-------------:|
@@ -21,17 +26,17 @@ Tout d'abord, nous verrons comment partir d'une bonne base, pour se lancer dans 
 | **NodeJs**     | Framework permettant de créer des applications web pouvant évoluer rapidement      |
 | **VueJs**      | Framework permettant de créer des éléments dynamiques (par exemple, le chargement d'une galerie photo qui aurait évoluée dans le temps)      |
 
-## Maquette sommaire
+## <a name="maquette-sommaire"></a>Maquette sommaire
 
 ![](http://puu.sh/Csk3S/d1defa2dae.png)
 Ce sera la base de notre travail, nous verrons par la suite si d'autres éléments doivent être ajoutés.
 
-## Prérequis
+## Prérequis <a name="prerequis"></a>Explication du projet
 
 - [NodeJs](https://nodejs.org/en/)
 - Un éditeur de texte comme [Atom](https://atom.io/) ou [Visual Studio Code](https://code.visualstudio.com/) (pour le confort)
 
-## Réalisation du projet NodeJs
+## <a name="projet-nodejs"></a>Réalisation du projet NodeJs
 
 ### Création du back
 #### Créer un projet NodeJs
@@ -136,7 +141,7 @@ Ensuite, on va retourner dans *package.json* et on va mettre à jour la section 
   *lint* permet de lancer ESLint sur notre fichier index.js.
   *lint-fix* permettra de réparer les erreurs qui apparaitront (les règles d'Unix sont appliquées, nous voulons celles de Windows, c'est à ça que cela sert).
   
-  Donc pas d'inquiétude si, lors d'un lancement de *lint*, on obtient quelque chose comme 
+  Donc pas d'inquiétude si, lors d'un lancement de *lint* (**npm run lint**), on obtient quelque chose comme 
   ```
    1:32  error  Expected linebreaks to be 'LF' but found 'CRLF'  linebreak-style
    2:30  error  Expected linebreaks to be 'LF' but found 'CRLF'  linebreak-style
@@ -158,10 +163,10 @@ Ensuite, on va retourner dans *package.json* et on va mettre à jour la section 
 ✖ 16 problems (15 errors, 1 warnings)
    15 errors and 0 warnings potentially fixable with the `--fix` option.
 ```
-Un coup de *lint-fix*, et les erreurs s'envolent !
+Un coup de *lint-fix* (**npm run lint-fix**), et les erreurs s'envolent !
 Par contre, il reste un warning "Unexpected console statement".
 Ce warning indique qu'à la ligne 13 à partir du 3ème caractère une instruction appelant la *console* est donnée.
-Il s'agit d'un warning car lors du déploiement de l'application, ceci ne devra pas exister. En effet, une application déployée ne doit pas contenir de "tests" fait par les développeurs.
+Il s'agit d'un warning car lors du déploiement de l'application, ceci ne devra pas exister. En effet, une application déployée ne doit pas contenir de "tests consoles" fait par les développeurs.
 Pour l'instant, on va donc ajouter un petit quelque chose à notre fichier *index.js*
 
 *index.js*
@@ -418,3 +423,5 @@ Puis, il faudra modifier le fichier *index.html* de la sorte :
 
 Et voilà ! On a une application de galerie photo qui fonctionne très bien !
 Bravo !
+
+## <a name="projet-nodejs-vuejs"></a>Réalisation du projet NodeJs + VueJs
